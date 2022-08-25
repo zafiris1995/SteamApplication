@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace MyDatabase
 {
     internal class ApplicationDbContext :DbContext
     {
-        //public ApplicationDbContext() : base("Sindesmos")
-        //{
-           
-        //}
+        public ApplicationDbContext() : base("Sindesmos")
+        {
 
+        }
 
+        public DbSet<Game> Games { get; set; }
     }
 }
