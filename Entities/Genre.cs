@@ -9,10 +9,10 @@ namespace Entities
     public class Genre
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public Genre(string name )
+        public string Kind { get; set; }
+        public Genre(string kind )
         {
-            Name = name;
+            Kind = kind;
         }
         public Genre()
         {
