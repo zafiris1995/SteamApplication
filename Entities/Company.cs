@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class Game
-
+    public class Company
     {
         public int Id { get; set; }
-        public string Title { get; set; }
-        public int Price { get; set; }
-        public Game(string title, int price)
+        public string Name { get; set; }
+        public Company(string name)
         {
-            Title = title;
-            Price = price;
+            Name = name;
         }
-        public Game()
+        public Company()
         {
 
         }
