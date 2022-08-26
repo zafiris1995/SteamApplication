@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class Games
-
+    public class Genre
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public int Price { get; set; }
+        public int GenreId { get; set; }
+        public string Kind { get; set; }
     }
 }

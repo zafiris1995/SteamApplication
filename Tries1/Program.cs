@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entities;
+using MyDatabase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,14 @@ namespace Tries1
     {
         static void Main(string[] args)
         {
+            ApplicationDbContext db = new ApplicationDbContext();            
+
+            var games = db.Games.ToList();
+
+            foreach (var item in games)
+            {
+                Console.WriteLine(item.Id);
+            }
         }
     }
 }
