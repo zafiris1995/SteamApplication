@@ -18,7 +18,7 @@ namespace Tries1
 
             foreach (var item in games)
             {
-                Console.WriteLine(item.Id);
+                Console.WriteLine(item.Title + "\t" + item.Price);
             }
         }
     }
