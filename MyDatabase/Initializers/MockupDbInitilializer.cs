@@ -35,6 +35,7 @@ namespace MyDatabase.Initializers
             Game g18 = new Game() { Title = "Resident Evil", Price = 9 };
             Game g19 = new Game() { Title = "Monkey Island", Price = 15 };
             Game g20 = new Game() { Title = "Diablo IV", Price = 60 };
+            Game g21 = new Game() { Title = "MultiVersus", Price = 50 };
 
             context.Games.AddOrUpdate(g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g20);
             context.SaveChanges();
