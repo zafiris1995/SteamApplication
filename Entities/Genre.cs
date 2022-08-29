@@ -10,13 +10,8 @@ namespace Entities
     {
         public int Id { get; set; }
         public string Kind { get; set; }
-        public Genre(string kind )
-        {
-            Kind = kind;
-        }
-        public Genre()
-        {
-
-        }
+        
+        // Navigation Props
+        public virtual ICollection<Game> Games { get; set; }
     }
 }
