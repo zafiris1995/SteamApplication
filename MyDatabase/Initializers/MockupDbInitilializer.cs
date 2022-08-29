@@ -67,6 +67,7 @@ namespace MyDatabase.Initializers
             Company c6 = new Company() { Name = "Square " };
             Company c7 = new Company() { Name = "Nintendo" };
             Company c8 = new Company() { Name = "Sega" };
+            Company c9 = new Company() { Name = "Sony" };
 
             context.Genres.AddOrUpdate(gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8);
             context.SaveChanges();
